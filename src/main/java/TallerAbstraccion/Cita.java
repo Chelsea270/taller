@@ -29,6 +29,12 @@ public class Cita {
         this.fecha = nuevaFecha;
         this.hora = nuevaHora;
         this.motivo = nuevoMot;
+
+        System.out.println(" --- DATOS ACTUALIZADOS: ---");
+        System.out.println( "Fecha: "+ nuevaFecha);
+        System.out.println( "Hora: "+ nuevaHora);
+        System.out.println( "Motivo: "+ nuevoMot);
+
     }
 
 }

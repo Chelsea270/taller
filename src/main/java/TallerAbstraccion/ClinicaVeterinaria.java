@@ -41,6 +41,7 @@ public class ClinicaVeterinaria {
             System.out.println("¡Cita guardada exitosamente!");
         }
 
+        sc.close();
 
     }
 }
