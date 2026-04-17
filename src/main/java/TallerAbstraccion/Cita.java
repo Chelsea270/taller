@@ -25,10 +25,11 @@ public class Cita {
         return fecha;
     }
 
-    public void modificarCita(String nuevaFecha, String nuevaHora) {
+    public void modificarCita(String nuevaHora, String nuevaFecha, String nuevoMot) {
         this.fecha = nuevaFecha;
         this.hora = nuevaHora;
-        System.out.println( "La fecha final queda para el dia " + this.fecha + " a las: "+ this.hora);
+        this.motivo = nuevoMot;
     }
+
 }
 

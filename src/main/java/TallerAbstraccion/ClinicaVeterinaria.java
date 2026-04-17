@@ -18,23 +18,28 @@ public class ClinicaVeterinaria {
         mascota1.agregarCita(cita1);
 
         System.out.println(" Se ha realizado la cita a nombre de "+ dueno1.getNombre() + "para el dia "+ cita1.getFecha());
+
+        cita1.registrarDiagnostico("Mascota saludable, vacuna aplicada.");
+
         System.out.println(" ¿Desea modificar la cita? ");
-        String respuesta = sc.nextLine();
+        String respuesta = sc.nextLine().trim();
 
         if (respuesta.equalsIgnoreCase("si")) {
             System.out.println("Inserte el nombre de la nueva fecha: ");
             String nuevaFecha = sc.nextLine();
             System.out.println("Inserte la hora deseada: ");
             String nuevaHora = sc.nextLine();
+            System.out.println("motivo de la cita: ");
+            String nuevoMont = sc.nextLine();
 
-            cita1.modificarCita(nuevaHora, nuevaFecha);
+            cita1.modificarCita(nuevaHora, nuevaFecha, nuevoMont);
 
-            System.out.println(" ¡Actualizacion exitosa de los datos! fecha de la cita: "+ nuevaFecha + " a las: "+ nuevaHora);
+            System.out.println(" ¡Actualizacion exitosa de los datos! fecha de la cita: "+ nuevaFecha +
+                    " a las: "+ nuevaHora + " por: "+ nuevoMont);
         }
         else {
             System.out.println("¡Cita guardada exitosamente!");
         }
-        cita1.registrarDiagnostico("Mascota saludable, vacuna aplicada.");
 
 
     }
