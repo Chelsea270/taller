@@ -30,6 +30,5 @@ public class Cita {
         this.hora = nuevaHora;
         System.out.println( "La fecha final queda para el dia " + this.fecha + " a las: "+ this.hora);
     }
-
 }
 
